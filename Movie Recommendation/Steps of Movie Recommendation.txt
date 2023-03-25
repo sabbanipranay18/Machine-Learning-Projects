@@ -1,0 +1,30 @@
+Steps for Movie Recommendations:-
+
+1. Importing the Dependencies
+   -- import numpy as np
+   -- import pandas as pd
+   -- import difflib
+   -- from sklearn.feature_extraction.text import TfidfVectorizer
+   -- from sklearn.metrics.pairwise import cosine_similarity
+
+2. Reading the data into Pandas Dataframe
+3. Pre-Processing the data
+    -- selecting only relevent colomns(features)
+    -- replacing NULL values with NULL string for only relevent colomns
+4. Combining features.
+5. After combining convert this TEXT data into NUMERIC data using "TfidfVectorizer()" 
+   syntax : TfidfVectorizer().fit_transform()
+6. After Converting TEXT to NUMERIC using "TfidfVectorizer()" now find similarity using "cosine Similarity()"
+7. creating a list with all movie names given in the dataset
+    -- .tolist()
+8. finding a close match for the movie name given by the user
+    -- difflab.get_close_matches()
+9. now we are taking close_match as only first value of closematch using index [0]
+10. finding the index of the movie with title
+11. getting the list of similar movies using enumarate.
+      -- list(enumarate()
+12. after that we need to sort the data based on similarity score.
+     --
+13. print the similar movies based on index
+
+
